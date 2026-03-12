@@ -91,3 +91,19 @@
         font-size: 1.1rem;
     }
 }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-out forwards;
+}
