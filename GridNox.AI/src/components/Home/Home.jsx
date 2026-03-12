@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Home.module.css'
+import video from '../../assets/images/video.mp4'
 
 export default function Home() {
-    const [Counter,setCounter] = useState(0);
-    useEffect(()=>{
-
-    }, []);
-  return <>
-  <h1>Home</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi blanditiis non laudantium consequatur culpa quos rerum autem voluptates aspernatur, minus dignissimos sequi ducimus et, sed explicabo, dicta corrupti dolore quis?</p>
-  </>
+    return (
+        <section  >
+            <video 
+                className={Style.backgroundVideo} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+            >
+                <source src={video} type="video/mp4" />
+            </video>
+            <div className={Style.overlay}></div>
+            <div className={Style.contentContainer}>
+                <h1 className={Style.mainHeading}>Securing the Digital Future</h1>
+                <p className={Style.subHeading}>Advanced Threat Intelligence & Cybersecurity Solutions</p>
+                <button className={Style.ctaButton}>Discover Our Solutions</button>
+            </div>
+        </section>
+    );
 }
 
 
