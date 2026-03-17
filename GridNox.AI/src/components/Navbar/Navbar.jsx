@@ -4,7 +4,6 @@ import logo1 from "../../assets/images/gridnox_ai_logo.png";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -15,7 +14,6 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
 
   return (
@@ -24,7 +22,6 @@ export default function Navbar() {
       ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"}`}
     >
       <div className="max-w-7xl h-20 mx-auto flex items-center justify-between px-6 py-4">
-
         {/* Logo */}
         <NavLink to="/">
           <img
@@ -54,8 +51,8 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/"
-              className={`block px-6 py-3 sm:text-black md:p-0 font-bold md:${
-                isScrolled ? "text-black" : "text-white"
+              className={`block px-3  py-3 font-bold text-black ${
+                isScrolled ? "md:text-black" : "md:text-white"
               }`}
             >
               Home
@@ -65,8 +62,8 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/about"
-              className={`block px-6 py-3 sm:text-black md:p-0 font-bold md:${
-                isScrolled ? "text-black" : "text-white"
+              className={`block px-3  py-3 font-bold text-black ${
+                isScrolled ? "md:text-black" : "md:text-white"
               }`}
             >
               About
@@ -76,8 +73,8 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/services"
-              className={`block px-6 py-3 sm:text-black md:p-0 font-bold md:${
-                isScrolled ? "text-black" : "text-white"
+              className={`block px-3  py-3 font-bold text-black ${
+                isScrolled ? "md:text-black" : "md:text-white"
               }`}
             >
               Services
@@ -87,8 +84,8 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/contact-us"
-              className={`block px-6 py-3 sm:text-black md:p-0 font-bold md:${
-                isScrolled ? "text-black" : "text-white"
+              className={`block px-3  py-3 font-bold text-black ${
+                isScrolled ? "md:text-black" : "md:text-white"
               }`}
             >
               Contact
