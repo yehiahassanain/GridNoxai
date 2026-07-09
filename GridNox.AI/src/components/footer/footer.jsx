@@ -33,15 +33,9 @@ export default function Footer() {
                   </ul>
               </div>
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-heading uppercase text-white">Contact</h2>
-                  <ul class="text-body font-medium">
-                      <li className="mb-4">
-                          <NavLink to="/contact-us" className="hover:underline text-white">Contact US</NavLink>
-                      </li>
-                      <li className="mb-4">
-                          <a href="mailto:MM@GridNox.ai" className="hover:underline text-white font-semibold">MM@GridNox.ai</a>
-                      </li>
-                  </ul>
+                <br />
+                <br />
+                  <NavLink to="/contact-us" className="hover:underline text-white">Contact US</NavLink>   
               </div>
               
           </div>
